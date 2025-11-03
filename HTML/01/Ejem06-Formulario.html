@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario de contacto</h1>
+    <!-- si no se pone metodo el metodo por defecto es get
+     metodo post permite enviar la info pero de manera oculta para nosotros
+     metodo post es mas para privacidad-->
+    <form action="Recibir.php" method="post">
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+            <!-- el legend sirve para sacar el titulo de un conjunto de datos englobado con el fieldset -->
+            <label for="nombre">Nombre:</label>
+            <!-- es una etiqueta no obligatoria que no tiene ventajas aparentes -->
+            <input type="text" id="nombre" name="nombre" required value="dato por defecto">
+            <br>
+            <label for="edad">Edad</label>
+            <!-- el input type number es para numeros -->
+            <input type="number" id="edad" min="0" max="100" name="edad" placeholder="0">
+            <br>
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" name="email" placeholder="abc@abc.">
+            <br>
+            <label for="color favorito">Color favorito</label>
+            <input type="color" id="color" name="color" required>
+            <br>
+            <input type="hidden" name="token" value="123456789">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje">Diego</textarea>
+            <br>
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            <br>
+            <label for="horaContacto">Hora de Contacto:</label>
+            <input type="time" id="horaContacto" name="horaContacto">
+            <br>
+            <label for="ciudad">Ciudad de Nacimiento</label>
+            <select name="ciudad" id="ciudad">
+                <option value="madrid">Madrid</option>
+                <option value="val">Valencia</option>
+                <option value="bar">Barcelona</option>
+            </select>
+            <br>
+            <label for="deporte_favorito">Deporte Favorito:</label>
+            <input type="checkbox" id="futbol" name="deporte_favorito" value="futbol">
+            <label for="futbol">Fútbol</label>
+            <input type="checkbox" id="baloncesto" name="deporte_favorito" value="baloncesto">
+            <label for="baloncesto">Baloncesto</label>
+            <input type="checkbox" id="tenis" name="deporte_favorito" value="tenis">
+            <label for="tenis">Tenis</label>
+            <br>
+            <input type="radio" id="generohombre" name="genero">
+            <label for="generohombre">Hombre</label>
+            <input type="radio" name="genero" id="generomujer">
+            <label for="generomujer">Mujer</label>
+            <br>
+            <label for="web">Pagina Web</label>
+            <input type="url" id="web" name="web" placeholder="https://">
+            <br>
+            <label for="tel">Telefono de contacto</label>
+            <input type="tel" name="tel" id="tel" placeholder="+34 600 000 000">
+            <label for="archivo">Subir Archivo:</label>
+            <input type="file" name="archivo" id="archivo">
+            <br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena" required>
+        </fieldset>
+        <br>
+        <input type="submit" value="Pulsar para enviar">
+        <input type="button" value="">
+    </form>
+</body>
+
+</html>

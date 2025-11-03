@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="form.php" method="post">
+        <fieldset>
+            <legend>Datos</legend>
+            <label for="desplegable">Elige</label>
+            <select name="desplegable" id="desplegable" multiple required>
+                <option value="1">a</option>
+                <option value="2">b</option>
+                <option value="3">c</option>
+            </select>
+            <br>
+            <label for="primero">1</label>
+            <input type="radio" name="a" id="primero" required>
+            <label for="primero">2</label>
+            <input type="radio" name="a" id="segundo" required>
+            <br>
+            <input type="submit" value="Haga click para enviar">
+        </fieldset>
+    </form>
+</body>
+
+</html>
